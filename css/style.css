@@ -1,246 +1,612 @@
-/*fornt inport*/
-	@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
 
+/*link up google font here */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/*font-family: 'Rajdhani', sans-serif;
+font-family: 'Roboto', sans-serif;*/
 *{
-	margin: 0;
 	padding: 0;
-}
-body,h1,h2,h3,h4,h5,h6,p,span,input,button{
-font-family: 'Playfair Display', serif;
+	margin:0 ;
+	box-sizing: 0;
+
 }
 
-/*header section sellection css  start*/
-.header{
-width: 100%;
-display: flow-root;
+/*header css start*/
+header{
+    position: fixed;
+    width: 100%;
+    padding-top: 20px;
+    text-align: center;
+  /*  background: transparent;*/
 }
-.cointainer{
-	width: 1140px;
-	margin: 0 auto;
-}
-.navibar{
+.scroll{
+	position: fixed;
 	width: 100%;
-	padding: 30px 0;
-	float: left;
+	background: green;
 }
 
-.logo{
-	width: 20%;
-	float: left;
+.navbar ul li a{
+	font-family: "Roboto",sans-serif;
+	color: white !important ;
+	font-size: 14px;
+	text-transform: capitalize;
+	font-weight: 700;
+	transition: 5sc;
+
 }
-.manu-item{
-	width: 80%;
-	float: right;
-	text-align: right;
-	
+.navbar ul li a:hover{
+	color: #cbc6c6e6 !important;
+	transform: scale(1.001);
+	transition: 5sc;
 }
-.manu-item ul li{
-	list-style: none;
+
+.collapse ul{
+	padding-right:60px;
+}
+.collapse ul li{
+	padding-right:10px;
+}
+.navbar-brand{
+	padding-bottom: 10px;
+}
+.header-btn{
 	display: inline-block;
+    border: 1px solid transparent;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 12px 40px;
+    border-radius: 30px;
+    background-color: #fff;   
+    color: #3a414e;
+    transition: all .4s ease;
 }
-.manu-item ul li a{
-	text-decoration: none;
-	text-transform: uppercase;
-	color: #7c8081;
-	margin-left: 55px;
-	transition: 1sc;
-}
-.manu-item ul li a:hover{
-	color: green;
-	font-family: bold;
-	transform: scale(1.1);
-	transition: 1s;
+.header-btn:hover{
+	color:white;   
+    background: #21146a;
+    border: 1px solid white;
+    transform: scale(1.01);
+    transform: 05sc;
 }
 
-/*header section sellection css end*/
-/*Banner section css start*/
+/*header css end here*/
+/* banner seciton start here*/
 .banner{
 	width: 100%;
-	display: flow-root;
-}
+	height:130vh; 
+	background: #22195b;
+	background-image: url(../image/banner-bg.png) width:100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 
-.post-contain{
-	 padding:50px;
-}
-.photodairy{
-	text-transform: uppercase;
-	color: #b4ad9e;
-}
-.title{
-padding: 25px 0;
-color: #626262;
+}	
+.banner .row{
 	
+	height:130vh;
+	align-items: center;
 }
-.paragraph{
-	color: #636162;
+.banner-left img{
+	size: 16px;
 }
-.comment{
-	margin-top: 20px;
-	color: #b4ad9e;
+.banner-right{
+    margin-left: 50px;
+    padding-top: 40px;
 }
-/*Banner section css end*/
+.banner h1{	
+	font-size: 50px;
+	font-weight: 700;;
+	 font-family: "Rajdhani",sans-serif;
+	  margin: 7px 136px 22px 0;
+    color: white;
+    line-height: 1.2;   
+}
+.banner p{
+	font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin: 7px 166px 50px 0;
+    color: white;
+}
 
-/*Post Gallary css Start*/
-.post-gallary{
+
+.section-margin{
+	margin: 135px 0;
+
+}
+.banner-btn{
+	padding: 10px 45px;
+	border-radius: 100px;
+	border: none;
+	border: 1px solid #21146a;
+}
+.banner-btn:hover{
+	color:white;   
+    background: #21146a;
+    border: 1px solid white;
+    transform: scale(1.09);
+    transform: 05sc;
+}
+/*section intro css start here*/
+.section-intro{
 	width: 100%;
-	display: flow-root;
+	margin-top: 80px;
 }
-.gallary{
-	padding:50px;
-	display: flow-root;
+.section-intro h1{	
+	font-size: 36px;
+	font-weight: 700;;
+	 font-family: "Rajdhani",sans-serif;
+    color: #3a414e;
+    line-height: 1.25;   
+}
+/*section intro css end here*/
+.card-feature{
+	width: 100%;
+}
+.title p{
+	font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin: 7px 333px 30px 333px;
+    color: #797979;
+}
+.title h2{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 46px;
+    font-weight: 700;
+    color: #3a414e;
+}
+.box{
+    padding: 30px 50px;
+}
+
+.service-1{
+	padding: 30px;
+	background: #faf3ff;   
+	box-shadow: 0 5px 10px 1px;
+	transition: .5s;
+}
+
+.service-1:hover{
+	box-shadow: 0px 0px 7px 10px #b9b6b6;
+    transition: .5s;
+    transform: scale(1.09);
+}
+.second{
+    padding: 50px 30px;
+}
+.second i{
+	font-size: 30px;
+	color: #3a414e;
+}
+.second h2{
+	font-family: 'Rajdhani', sans-serif;
+	font-size: 22px;
+	font-weight: 600;
+	color: #3a414e;
+}
+.second p{
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	transition: .5s;
+	color: #797979;
+}
+.service-2{
+	padding: 10px 35px;
+	border: 1px solid #faf3ff;
+	background: #faf3ff;
+}
+.service-2:hover{
+	box-shadow: 0px 0px 7px 10px #b9b6b6;
+    transition: .5s;
+    transform: scale(1.09);
+}
+.service-3{
+	padding: 10px 35px;
+	border: 1px solid #faf3ff;
+	background: #faf3ff;
+}
+.service-3:hover{
+	box-shadow: 0px 0px 7px 10px #b9b6b6;
+    transition: .5s;
+    transform: scale(1.09);
+}
+.about{
+	width: 100%;
+	background: #FAF0FF;
+	margin-top: 80px;
+}
+.about h3{
+	font-family: 'Rajdhani', sans-serif;
+	font-weight: 700;
+	color: #3a414e;
+	font-size: 36px;
+	padding: 40px 157px 22px 0;
+	color: #3a414e;
+}
+.about p{
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	padding-right: 75px;
+	padding-bottom: 20px;
+	color: #797979;
+}
+.about-btn{
+	padding: 10px 45px;
+	border-radius: 100px;
+	border: none;
+	border: 1px solid #21146a;
+}
+.about-btn:hover{
+	color:white;   
+    background: #21146a;
+    transform: scale(1.09);
+    transform: 05sc;
+}
+
+/*feature start */
+.feature{
+	width: 100%;
+	padding:80px 0;
+}
+.feature h1{
+	font-family: "Rajdhani",sans-serif;
+    font-weight: 700;
+    line-height: 1.25 !important;    
+    color: #3a414e;
+    margin-bottom: 10px;
+    font-size: 36px !important;
+	}
+.feature p{
+	font-family: "Roboto",sans-serif;
+	font-weight: 400;
 	
 }
-.photo-gallary{
+/*offer start*/
+.offer{
 	width: 100%
 }
-.gallary-left{
-	width: 48%;
-	float: left;
-	margin: 0 auto;
+.offer i{
+    font-size: 40px;
 }
-.photo-gallary .photodairy{
-	    margin-top: 22px;
+.offer h2{
+	font-size: 22px;
+	font-family: 'Rajdhani', sans-serif;
+	font-weight: 600;
+	color: #3a414e;
+	padding: 15px 20px;
 }
-.gallary-right{
-	width: 48%;
-	float: right;
-	margin: 0 auto;
+
+.offer p{
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 90px;
+	color: #797979;
+}
+
+.service-5{
+	    padding-top: 30px;
+}
+/*solution css start here */
+
+.solution-right{
+	    padding: 40px 80px;
+}
+.solution-right h3{
+	font-family: 'Rajdhani', sans-serif;
+	font-weight: 700;
+	color: #3a414e;
+	font-size: 36px;	
+	color: #3a414e;
+	   
+}
+.solution-right p{
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	padding-right: 75px;
+	padding-bottom: 20px;
+	color: #797979; 
+}
+.solution-btn{
+	padding: 10px 45px;
+	border-radius: 100px;
+	border: none;
+	border: 1px solid #21146a;
+}
+.solution-btn:hover{
+	color:white;   
+    background: #21146a;
+    transform: scale(1.09);
+    transform: 05sc;
+}
+
+
+/*ceotation start here*/
+.coatation{
+	width: 100%;
+}
+.coatation ul li{
+	/*text-decoration-style: none;*/
+	list-style-type:none;
+}
+.coatation ul li i{
+	font-size: 14px;
+	padding:12px 0;
+	margin-right: 10px;
+
+}
+.fa-times{
+	color:red;
+}
+.card-price{
+font-family: "Rajdhani",sans-serif;
+/* color: #3a414e; */
+line-height: 1.25;
+/* padding-top: 15px; */
+font-size: 40px;
+font-weight: 600;
+vertical-align: middle;
+}
+.card_price_price h1{
+	font-family: 'Rajdhani', sans-serif;
+	font-size: 60px;
+	font-weight: 600;
+	color: #3a414e;
+	vertical-align: middle;
+}
+.coatation h2{
+	font-family: 'Rajdhani', sans-serif;
+	font-size: 27px;
+	font-weight: 600;
+	color: #3a414e;
+	vertical-align: middle;
+}
+/*.coatation h1{
+    font-family: "Rajdhani",sans-serif;
+    color: #3a414e;
+    line-height: 1.25;
+    padding-top: 15px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 0;
+}*/
+
+.coatation p{
+	font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+     color: #797979;
+}
+
+.coatation-btn{
+	padding: 10px 45px;
+	border-radius: 100px;
+	border: none;
+	border: 1px solid #21146a;
+}
+.coatation-btn:hover{
+	color:white;   
+    background: #21146a;
+    transform: scale(1.09);
+    transform: 05sc;
+}
+/*.bttn{
+	    padding: 45px 0;
+}*/
+/* client css starat */
+.client{
+	width: 100%;
+}
+.client h1{
+	font-family: "Rajdhani",sans-serif;
+    font-weight: 700;
+    line-height: 1.25 !important;    
+    color: #3a414e;
+    margin-bottom: 10px;
+    font-size: 36px !important;
+	}
+.client p{
+	font-family: "Roboto",sans-serif;
+	font-weight: 400;
+    padding: 0 56px;
 }
 .title-1{
+	padding: 100px 0;
+}
+}
+/*company banner css here*/
+.testimonial{
+	width: 100%
 	
-	color: #626262;
 }
-/*Post Gallary css End*/
-/*subcription from css start*/
-.subcription{
+ .testimonial h3{
+    font-family: "Rajdhani",sans-serif;
+    color: #3a414e;
+    line-height: 1.25;
+    padding-top: 15px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.testimonial p{
+    color: #797979;
+    font-family: "Roboto",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.667;
+
+}
+.testimonial .testimonial__p{
+    color: #797979;
+    font-family: "Roboto",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.667;
+    padding: 0 230px;
+}
+.owl-theme .owl-nav{
+	display: none;
+}
+.testimonial .owl-carousel .owl-item img{
+	padding-left: 615px;           
+	width: auto !important;
+}
+.testimonial .owl-theme span{
+    background: #280d82 !important;
+    width: 25px !important;
+    height: 7px !important;
+    border-radius: 3px !important;
+	margin: 60px 10px !important;
+}
+
+/* Clint logo css start here*/
+.client-logo{
 	width: 100%;
-	display: flow-root;
-	background: #f0f0f0;
-	text-align: center;
-	padding: 60px 0;
+	padding: 160px 0;
+}
+.title-3{
+	display: block;
+}
+.client-logo img{
+    filter: grayscale(1);
+	opacity: 0.3;
+}
+.client-logo img:hover{
+	filter: none;
+	opacity: 1;
+}
+ .client-logo .owl-carousel .owl-item img{
+	/*display: block !important;*/
+	width: auto !important;
 }
 
-.subcription  h1{
-	padding-bottom: 40px;
+
+/*.owl-theme .owl-dots{
+	display: none;
+}*/
+
+.fotter-are{
+	width: 100%;
+	color: white;
+	padding: 120px 0px 0;
+	background: #0e1424; 
+	 
+}
+.fotter-are i{
+	color: #797979;
 }
 
-form input{
-	width: 380px;
-	height: 35px;
-    margin: 15px 0;
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid black;
+.fotter-are h3{
+	font-size: 22px;
+	margin-bottom: 25px;
+	font-weight: 600;
+	font-family: "Rajdhani",sans-serif;
+	color: #fff;
+	line-height: 1.25;
 }
-form input:focus{
-	outline: : none;
+.fotter-are ul li{
+	      list-style-type: none;
+    text-align: -webkit-match-parent;
+
 }
-form input::placeholder{
-	font-size: 14px
+.fotter-are ul li a{
+	color: #797979;
+    font-family: "Roboto",sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.667; 
 }
-form{
+.fotter-are p{
+	color: #797979;
+    font-family: "Roboto",sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.667;
+}
+.fotter-title input{
+	height: 48px;
+	border: none;
+	width: 75% !important;
+	font-weight: 400;
+	background: rgba(255,255,255,0.2);
+	color: #fff;
+	padding-left: 20px;
+	border-radius: 2px;
+	font-size: 14px;
+	padding: 15px;
+}
+.fotter-title input:hover{
+	color: transparent;
+}
+.fotter-title{
 	position: relative;
 }
-form i{
+.fotter-button{
 	position: absolute;
-    top: 27px;
-    right: 396px;
-}
-.gallary .button{
-	margin-top: 200px;
-}
-
-.read-more{
-text-align: center;
+	top: 98px;
+	left: 200px;
 
 }
-.read-more button{
-	padding:20px 50px;
-	/*background: transparent;*/
-	font-size: 18px;
-	border-radius: 3px;
-	border: none;
-	border-bottom: 1px solid #bebcbd;
-	transform: .6s;
+	
+.ft-ar-btn{
+	font-family: "Roboto",sans-serif;
+    color: #3a414e;
+    border-radius: 0;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding: 8px 20px;
+    border: 0;
+    font-size: 14px;
+    background: #fff;
+    font-weight: 500;
+    text-transform: capitalize;
 }
-.read-more button:hover{
-	color: green;
-	background: #bebcbd;
-	border-radius: 5px;
-	border-bottom: 1px solid green;
-	transform: scale(1.03);
-	transform: .6s;
-
+/*fotter logo area start here */
+.fot-logo-1{
+	color: #797979;
+    font-family: "Roboto",sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.667;
 }
-
-/*subcription from css end*/
-/*Social icon css start*/
-.cocialicon{
-	width: 100%;
-	display: flow-root;
-}
-.cocialbar{
-	width: 100%;
-	float: left;
-    padding: 30px 0;
-
-}
-.cocial-manu{
-	width: 40%;
-	float: left;
-	/*text-align: center;*/
-
-} 
-
-.cocial-manu ul{
-list-style: none;
-
-}
-.cocial-manu ul li{
-list-style: none;
-display: inline-block;
-margin: 0 45px;
-font-size: 18px;
-transform: .6s;
-}
-.cocial-manu ul li:hover{
-	color: green;
-	transform: scale(1.3);
-	transform: .6s;}
-}
-.cocial-icon{
-	width: 45%;
-	float: right;
+.fot-logo-2{
+	color: white !important;
+    
 }
 
-/*Social Icon right start*/
-
-/*Social Icon right end*/
-.cocial-icon ul{
-list-style: none;
+.marging-gap{
+	
+	padding:50px 0;
 }
-.cocial-icon ul li {
-	display:inline-block;
+/* social icons*/
+.socialicon{
+    width: 100%;
+  /*  float: right;*/
+  /*  position: absolute;*/
+        padding-left: 64px;
+    /*bottom: -335px;*/
+}
+
+
+.socialicon ul li {
+   	list-style: none;
+   	text-align: center;
+	display: inline-block;
+	/*padding-left: 5px*/
+}
+.socialicon ul li a i{
+	height: 30px;
+	width: 30px;
+	/* margin-top: 30px; */
+	color: white;
+	 background: rgba(255,255,255,0.2);
+	line-height: 30px;
+	/* border-radius: 50%; */
+	font-size: 14px;
+	transition: .5s;
+}
+.socialicon ul li a i:hover{
 	color: black;
-	padding-right: 20px;
-	transform: .6s;
+	background: white;
+	/*font-size: 25px;*/
+	transform: scale(1.01);
+	transition: .5s;
 }
-.cocial-icon ul li:hover{
-	color: green;
-	transform: scale(1.25);
-	font-style: bold
-	transform: .6s;
-}
-.cocial-icon ul a i{
-	font-size: 18px;
-	color: #7c8081;
-	padding-right: 20px;
-	transform: .6s;
-
-}
-
-.cocial-icon ul a i:hover{
-	color: green;
-	transform: scale(1.3);
-	transform: .6s;}
-/*Social icon css end*/

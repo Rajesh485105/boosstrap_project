@@ -345,38 +345,14 @@
      <!-- Feature end here -->
       <!-- testimonial start here -->
       <div class="testimonial">
-        <div class="cointainer">
-          <div class="owl-carousel owl-theme">
-            <div class="item"> 
-               <div class="row text-center">
-                <div class="col-md-12">
-                  <img src="image/testimonial1.png" class="img-fluid" >
-                  <h3>Stephen Mcmilan</h3>
-                  <p>Executive, ACI Group</p>
-                  <p class="testimonial__p">Also made from. Give may saying meat there from heaven it lights face had is gathered god earth light for life may itself shall whales made they're blessed whales also made from give may saying meat. There from heaven it lights face had also made from. Give may saying meat there from heaven</p>
-                </div>
-              </div>
-            </div>
-             <div class="item"> 
-               <div class="row text-center">
-                <div class="col-md-12">
-                  <img src="image/testimonial1.png" class="img-fluid" >
-                  <h3>Stephen Mcmilan</h3>
-                  <p>Executive, ACI Group</p>
-                  <p class="testimonial__p">Also made from. Give may saying meat there from heaven it lights face had is gathered god earth light for life may itself shall whales made they're blessed whales also made from give may saying meat. There from heaven it lights face had also made from. Give may saying meat there from heaven</p>
-                </div>
-              </div>
-            </div>
-             <div class="item"> 
-               <div class="row text-center">
-                <div class="col-md-12">
-                  <img src="image/testimonial1.png" class="img-fluid" >
-                  <h3>Stephen Mcmilan</h3>
-                  <p>Executive, ACI Group</p>
-                  <p class="testimonial__p">Also made from. Give may saying meat there from heaven it lights face had is gathered god earth light for life may itself shall whales made they're blessed whales also made from give may saying meat. There from heaven it lights face had also made from. Give may saying meat there from heaven</p>
-                </div>
-              </div>
-            </div>                
+        <div class="cointainer">         
+          <div class="row text-center">
+            <div class="offset-md-2 col-md-8"> 
+              <img src="image/testimonial1.png" class="img-fluid">
+              <h3>Stephen Mcmilan</h3>
+              <p>Executive, ACI Group</p>
+              <p class="testimonial__p">Also made from. Give may saying meat there from heaven it lights face had is gathered god earth light for life may itself shall whales made they're blessed whales also made from give may saying meat. There from heaven it lights face had also made from. Give may saying meat there from heaven</p>
+            </div>      
           </div>         
         </div>
       </div>
@@ -492,17 +468,17 @@
                     items:1
                 },
                 600:{
-                    items:1
+                    items:3
                 },
                 1000:{
-                    items:1
+                    items:5
                 }
             }
         })
       </script>
 
       <!-- js for auto slider -->
-       <script>
+       <!-- <script>
         $(document).ready(function(){
           $('.owl-carousel').owlCarousel({
                 loop:true,
@@ -524,7 +500,7 @@
             }
         })
         })
-      </script>
+      </script> -->
       
      
     <!-- js quary linkup end here -->
@@ -536,11 +512,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- stick up header -->
     <script>
-     window.addEventListener("scroll",function(){
-      var topheader = document.quarySelector("header");
-      topheader.classList.Toggle("skicky",window.scrollY>0)
-     }).
-     
+      window.addEventListener("scroll",function(){
+          var topheader = document.querySelector("header");
+          topheader.classList.toggle("sticky",window.scrollY>0);
+
+      });
     </script>
   </body>
 </html>

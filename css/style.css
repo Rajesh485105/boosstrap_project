@@ -10,7 +10,9 @@ font-family: 'Roboto', sans-serif;*/
 
 }
 
-/*header css start*/
+/**********************************
+header css start
+*************************************/
 header{
 	width: 100%;
 	padding-top: 20px;
@@ -73,10 +75,12 @@ header{
 }
 
 /*header css end here*/
-/* banner seciton start here*/
+/***************************************
+ banner seciton start here
+ *****************************************/
 .banner{
 	width: 100%;
-	height:130vh; 
+/*	height:138vh; */
 	background: #22195b;
 	background-image: url(../image/banner-bg.png);
 	background-position: center;
@@ -85,23 +89,24 @@ header{
 
 }	
 .banner .row{
-	height:130vh;
+	height:90vh;
 	align-items: center;
 }
 .banner-left img{
 	size: 16px;
 }
 .banner-right{
-    margin-left: 50px;
-    padding-top: 40px;
+	padding-left: 168px;
+   /* margin-left: 50px;
+    padding-top: 40px;*/
 }
 .banner h1{	
-	font-size: 50px;
+	font-size: 48px;
 	font-weight: 700;;
-	 font-family: "Rajdhani",sans-serif;
-	  margin: 7px 136px 22px 0;
-    color: white;
-    line-height: 1.2;   
+	font-family: "Rajdhani",sans-serif;
+	/*margin: 7px 136px 22px 0;*/
+	color: white;
+	line-height: 1.2;   
 }
 .banner p{
 	font-family: 'Roboto', sans-serif;
@@ -116,10 +121,16 @@ header{
 
 }
 .banner-btn{
-	padding: 10px 45px;
-	border-radius: 100px;
-	border: none;
-	border: 1px solid #21146a;
+	display: inline-block;
+    border: 1px solid transparent;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 12px 40px;
+    border-radius: 30px;
+    background-color: #fff;   
+    color: #3a414e;
+    transition: all .4s ease;
 }
 .banner-btn:hover{
 	color:white;   
@@ -128,7 +139,9 @@ header{
     transform: scale(1.09);
     transform: 05sc;
 }
-/*section intro css start here*/
+/*************************************
+section intro css start here
+****************************************/
 .section-intro{
 	width: 100%;
 	margin-top: 80px;
@@ -244,7 +257,9 @@ header{
     transform: 05sc;
 }
 
-/*feature start */
+/************************************
+feature  css code start 
+***************************************/
 .feature{
 	width: 100%;
 	padding:80px 0;
@@ -262,7 +277,9 @@ header{
 	font-weight: 400;
 	
 }
-/*offer start*/
+/***********************************
+offer start
+****************************************/
 .offer{
 	width: 100%
 }
@@ -289,7 +306,9 @@ header{
 .service-5{
 	    padding-top: 30px;
 }
-/*solution css start here */
+/************************************
+solution css start here 
+**************************************/
 
 .solution-right{
 	    padding: 40px 80px;
@@ -323,12 +342,13 @@ header{
 }
 
 
-/*ceotation start here*/
+/****************************************
+ceotation start here
+*******************************************/
 .coatation{
 	width: 100%;
 }
 .coatation ul li{
-	/*text-decoration-style: none;*/
 	list-style-type:none;
 }
 .coatation ul li i{
@@ -341,13 +361,11 @@ header{
 	color:#f83b6c;
 }
 .card-price{
-font-family: "Rajdhani",sans-serif;
-/* color: #3a414e; */
-line-height: 1.25;
-/* padding-top: 15px; */
-font-size: 40px;
-font-weight: 600;
-vertical-align: middle;
+	font-family: "Rajdhani",sans-serif;
+	line-height: 1.25;
+	font-size: 40px;
+	font-weight: 600;
+	vertical-align: middle;
 }
 .card_price_price h1{
 	font-family: 'Rajdhani', sans-serif;
@@ -363,15 +381,6 @@ vertical-align: middle;
 	color: #3a414e;
 	vertical-align: middle;
 }
-/*.coatation h1{
-    font-family: "Rajdhani",sans-serif;
-    color: #3a414e;
-    line-height: 1.25;
-    padding-top: 15px;
-    font-size: 22px;
-    font-weight: 600;
-    margin-bottom: 0;
-}*/
 
 .coatation p{
 	font-family: 'Roboto', sans-serif;
@@ -392,10 +401,10 @@ vertical-align: middle;
     transform: scale(1.09);
     transform: 05sc;
 }
-/*.bttn{
-	    padding: 45px 0;
-}*/
-/* client css starat */
+
+/*******************************************
+ client css starat 
+ *****************************************/
 .client{
 	width: 100%;
 }
@@ -416,7 +425,9 @@ vertical-align: middle;
 	padding: 100px 0;
 }
 }
-/*company banner css here*/
+/**************************************
+testimonial banner css here
+*****************************************/
 .testimonial{
 	width: 100%
 	
@@ -438,19 +449,22 @@ vertical-align: middle;
     line-height: 1.667;
 
 }
+.testimonial1_items img{
+	     padding-left: 45px;
+}
 .testimonial .testimonial__p{
     color: #797979;
     font-family: "Roboto",sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.667;
-    padding: 0 2px;
+   
+    
 }
 .owl-theme .owl-nav{
 	display: none;
 }
-.testimonial .owl-carousel .owl-item img{
-	/*padding-left: 615px;*/           
+.testimonial .owl-carousel .owl-item img{     
 	width: auto !important;
 	align-items: center;
 }
@@ -462,7 +476,9 @@ vertical-align: middle;
 	margin: 60px 10px !important;
 }
 
-/* Clint logo css start here*/
+/******************************************
+ Clint logo css start here
+ ********************************************/
 .client-logo{
 	width: 100%;
 	padding: 120px 0;
@@ -479,19 +495,15 @@ vertical-align: middle;
 	opacity: 1;
 }
  .client-logo .owl-carousel .owl-item img{
-	/*display: block !important;*/
 	width: auto !important;
 }
 
 
-/*.owl-theme .owl-dots{
-	display: none;
-}*/
 
 .fotter-are{
 	width: 100%;
 	color: white;
-	padding: 120px 0px 0;
+	padding: 60px 0px 0;
 	background: #0e1424; 
 	 
 }
@@ -509,7 +521,7 @@ vertical-align: middle;
 }
 .fotter-are ul li{
 	      list-style-type: none;
-    text-align: -webkit-match-parent;
+   /* text-align: -webkit-match-parent;*/
 
 }
 .fotter-are ul li a{
@@ -546,8 +558,8 @@ vertical-align: middle;
 }
 .fotter-button{
 	position: absolute;
-	top: 98px;
-	left: 200px;
+    top: 123px;
+    left: 160px;
 
 }
 	
@@ -564,7 +576,9 @@ vertical-align: middle;
     font-weight: 500;
     text-transform: capitalize;
 }
-/*fotter logo area start here */
+/*****************************************
+fotter logo area start here 
+*******************************************8*/
 .fot-logo-1{
 	color: #797979;
     font-family: "Roboto",sans-serif;
@@ -577,17 +591,14 @@ vertical-align: middle;
     
 }
 
-.marging-gap{
-	
+.marging-gap{	
 	padding:50px 0;
 }
-/* social icons*/
+
 .socialicon{
-    width: 100%;
-  /*  float: right;*/
-  /*  position: absolute;*/
-        padding-left: 64px;
-    /*bottom: -335px;*/
+	width: 100%;
+	padding-left: 155px;
+    
 }
 
 
@@ -595,23 +606,20 @@ vertical-align: middle;
    	list-style: none;
    	text-align: center;
 	display: inline-block;
-	/*padding-left: 5px*/
+	
 }
 .socialicon ul li a i{
 	height: 30px;
 	width: 30px;
-	/* margin-top: 30px; */
 	color: white;
-	 background: rgba(255,255,255,0.2);
+	background: rgba(255,255,255,0.2);
 	line-height: 30px;
-	/* border-radius: 50%; */
 	font-size: 14px;
 	transition: .5s;
 }
 .socialicon ul li a i:hover{
 	color: black;
 	background: white;
-	/*font-size: 25px;*/
 	transform: scale(1.01);
 	transition: .5s;
 }
